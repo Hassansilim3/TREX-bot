@@ -58,15 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const correctOrder = ["/tgfvc.jpeg", "/tgfvcx.jpg", "/tfgvcxz.jpg"];
 
   const imageSets = {
-    1: ["tgfvc.jpeg", "/tgfvcx.jpg", "/b95b09e5b632d96ef5869f9f7ff09244.jpg", "/Photoroom-٢٠٢٤١٢٣١_٠٨٤٢١٤.png", "/bbd80caf99666dd6885c4b130cdb47a8.jpg", "/Photoroom-٢٠٢٤١٢٣١_٠٨٤٧٥٠.png", "/6ccf05b7b48366249b7ba126f31774a3.jpg", "/Photoroom-٢٠٢٤١٢٣١_٠٨٢٨١٥.png", "/c5fba4d66dada9dc52b220dbf1394a3e.jpg"],
+    1: ["tgfvc.jpeg", "tgfvcx.jpg", "b95b09e5b632d96ef5869f9f7ff09244.jpg", "Photoroom-٢٠٢٤١٢٣١_٠٨٤٢١٤.png", "bbd80caf99666dd6885c4b130cdb47a8.jpg", "Photoroom-٢٠٢٤١٢٣١_٠٨٤٧٥٠.png", "6ccf05b7b48366249b7ba126f31774a3.jpg", "Photoroom-٢٠٢٤١٢٣١_٠٨٢٨١٥.png", "c5fba4d66dada9dc52b220dbf1394a3e.jpg"],
     
-    2: ["copilot_image_1732148679332.jpeg", "/Photoroom-٢٠٢٥٠١٠٣_٢٣١٥٠٦.png","/1bf94f509e7dd8c0cfe1b1521cff67e9.jpg","/ff9eb9cc44377e2d09aa43452cc578e4.jpg","/e1f35f5adadcfafd3f6321a1bb7d115a.jpg", "/918d3dfb2ea84350d760c334aaed3c62.jpg", "/05c37d5f0a7f3c08d550c59b373966b8.jpg"  , "/11d10b918d5878be6e66983dc59f9859.jpg", "/d625676bc8aca6d401f677617460a0ce.jpg"],
+    2: ["copilot_image_1732148679332.jpeg", "Photoroom-٢٠٢٥٠١٠٣_٢٣١٥٠٦.png","1bf94f509e7dd8c0cfe1b1521cff67e9.jpg","ff9eb9cc44377e2d09aa43452cc578e4.jpg","e1f35f5adadcfafd3f6321a1bb7d115a.jpg", "918d3dfb2ea84350d760c334aaed3c62.jpg", "05c37d5f0a7f3c08d550c59b373966b8.jpg"  , "11d10b918d5878be6e66983dc59f9859.jpg", "d625676bc8aca6d401f677617460a0ce.jpg"],
 
  
     
-    3: ["/678aee0b72ec7e4c533303b0f31e5677.jpg", "/77fdeb9d0791f13b7e1774c56a02d6f6.jpg", "/6fde83444da459e72f4be5d4b934421f.jpg", "/fa134d5457492af750adf33eec7a41d6.jpg", "/p0o9i8.jpeg", "/tfgvcxz.jpg", "/78c8d320204d707597902b25c7512823.jpg", "/images.jpeg", "/3032c9868cac60b596c63b49387ca4ac.jpg"],
+    3: ["678aee0b72ec7e4c533303b0f31e5677.jpg", "77fdeb9d0791f13b7e1774c56a02d6f6.jpg", "6fde83444da459e72f4be5d4b934421f.jpg", "fa134d5457492af750adf33eec7a41d6.jpg", "p0o9i8.jpeg", "tfgvcxz.jpg", "78c8d320204d707597902b25c7512823.jpg", "images.jpeg", "3032c9868cac60b596c63b49387ca4ac.jpg"],
     
-    4: ["/09b00ad2281dcdb681dfc5fd1984bdc7.jpg", "/ff3573cd739ed6732043ebbd891ce369.jpg", "/1609f2935ff8fe6e6b08a791302fa098.jpg", "/d4294c4f87ac900261eb0145b1434ad7.jpg", "/0442afcba21d80ed513f6b91377eb300.jpg", "copilot_image_1732148757774.jpeg", "/7b76ff12b13cb6928d95a95ee1e0cac1.jpg", "/Photoroom-٢٠٢٤١٢٣١_١٢٤٨٢٦.png", "/780e913b4367ca16491f48fc18eeeb7f.jpg"],
+    4: ["09b00ad2281dcdb681dfc5fd1984bdc7.jpg", "ff3573cd739ed6732043ebbd891ce369.jpg", "1609f2935ff8fe6e6b08a791302fa098.jpg", "d4294c4f87ac900261eb0145b1434ad7.jpg", "0442afcba21d80ed513f6b91377eb300.jpg", "copilot_image_1732148757774.jpeg", "7b76ff12b13cb6928d95a95ee1e0cac1.jpg", "Photoroom-٢٠٢٤١٢٣١_١٢٤٨٢٦.png", "780e913b4367ca16491f48fc18eeeb7f.jpg"],
     
   };
 
