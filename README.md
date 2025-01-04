@@ -1,1 +1,2 @@
-# TREX-bot
+# miniApp-2
+Telegram MiniApp
