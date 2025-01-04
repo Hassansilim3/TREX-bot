@@ -21,7 +21,7 @@
 }
 
         .rojkkkund {
-            background-image: url('/bhhh.png'); /* رابط الصورة */
+            background-image: url('bhhh.png'); /* رابط الصورة */
             background-size: cover; /* تجعل الصورة تغطي العنصر بالكامل */
             margin-top: -200px;
             margin-left: 10px;
