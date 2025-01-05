@@ -229,7 +229,8 @@
 
     .xtwitter{
       
-      color: #2E2C30;
+      border-radius: 5px;
+      background-color:#B7B7B7 ;
       width: 30px;
     }
 
