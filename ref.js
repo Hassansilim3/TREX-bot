@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.addEventListener('click', () => {
         setTimeout(() => {
             score += 100; // يمكنك تغيير القيمة هنا إذا أردت
-            scoreDisplay.textContent = `Score: ${score}`;
+            scoreDisplay.textContent = ` ${score}`;
             localStorage.setItem('score', score);
         }, 1000); // 15000 milliseconds = 15 seconds
     });
