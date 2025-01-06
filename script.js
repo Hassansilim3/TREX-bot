@@ -267,41 +267,41 @@ function updateLevel() {
   let level = getCurrentLevel();
   let nextLevelScore = '';
 
-  if (score >= 80 && level < 8) {
+if (score >= 14000 && level < 8) {
     level = 8;
     nextLevelScore = 'Max lvl';
   } 
-  if (score >= 70 && level < 7) {
+  if (score >= 11500 && level < 7) {
     level = 7;
-    nextLevelScore = '80';
+    nextLevelScore = '14000';
   }
-  if (score >= 60 && level < 6) {
+  if (score >= 9500 && level < 6) {
     level = 6;
-    nextLevelScore = '70';
+    nextLevelScore = '11500';
   } 
-  if (score >= 50 && level < 5) {
+  if (score >= 7500 && level < 5) {
     level = 5;
-    nextLevelScore = '60';
+    nextLevelScore = '9500';
   } 
-  if (score >= 40 && level < 4) {
+  if (score >= 5000 && level < 4) {
     level = 4;
-    nextLevelScore = '50';
+    nextLevelScore = '7500';
   }  
-  if (score >= 30 && level < 3) {
+  if (score >= 3500 && level < 3) {
     level = 3;
-    nextLevelScore = '40';
+    nextLevelScore = '5000';
   } 
-  if (score >= 20 && level < 2) {
+  if (score >= 1000 && level < 2) {
     level = 2;
-    nextLevelScore = '30';
+    nextLevelScore = '3500';
   }  
-  if (score >= 10 && level < 1) {
+  if (score >= 100 && level < 1) {
     level = 1;
-    nextLevelScore = '20';
+    nextLevelScore = '1000';
   }  
   if (score >= 0 && level < 0) {
     level = 0;
-    nextLevelScore = '10';
+    nextLevelScore = '100';
   
 } else {
  nextLevelScore = level === 8 ? '': 'max lvl';
@@ -309,12 +309,12 @@ function updateLevel() {
  nextLevelScore = level === 6 ? '11500' : '11.5k';
  nextLevelScore = level === 5 ? '9500' : '9.5k';
  nextLevelScore = level === 4 ? '7500' : '7.5k';
- nextLevelScore = level === 0 ? '5000' : '5k';
+ nextLevelScore = level === 3 ? '5000' : '5k';
  nextLevelScore = level === 2 ? '3500' : '3.5k';
  nextLevelScore = level === 1 ? '1000' : '1000';
- nextLevelScore = level === 3 ? '100' : '100';
+ nextLevelScore = level === 0 ? '100' : '100';
  
-  }
+}
 
   setCurrentLevel(level);
   $toLvlUp.textContent = nextLevelScore;
