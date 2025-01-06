@@ -926,7 +926,7 @@ margin-right: 230px;
 /*  */
  .ref .rows {
   display: flex;
-  max-height: 400px;
+  max-height: 380px;
   overflow-y: scroll;
   flex-direction: column;
   align-items: center;
