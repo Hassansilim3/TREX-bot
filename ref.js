@@ -49,7 +49,7 @@ const renderRefBoard = (refData) => {
             </div>
             <h2>
               ${ref.username} 
-              <span>+${ref.points} Rex</span>
+              <span>+${ref.score} Rex</span>
             </h2>
           </li>
     `;
@@ -81,12 +81,12 @@ const topUpRef = async (e) => {
     referred: true,
   });
   // Points
-  const userPointsRef = ref(db, `users/${refUsername}/points`);
+  const userPointsRef = ref(db, `users/${refUsername}/score`);
   get(userPointsRef).then((snapshot) => {
      console.log(snapshot.val());
-    const score = snapshot.exists() ? snapshot.val() : 0;
+    const currentPoints = snapshot.exists() ? snapshot.val() : 0;
     update(ref(db, `users/${refUsername}`), {
-      Points: Number(score) + 100,
+      score: Number(currentPoints) + 100,
     });
     e.target.parentNode.remove();
   });
