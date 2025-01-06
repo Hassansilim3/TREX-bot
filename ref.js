@@ -84,9 +84,9 @@ const topUpRef = async (e) => {
   const userPointsRef = ref(db, `users/${refUsername}/score`);
   get(userPointsRef).then((snapshot) => {
      console.log(snapshot.val());
-    const currentPoints = snapshot.exists() ? snapshot.val() : 0;
+    const score = snapshot.exists() ? snapshot.val() : 0;
     update(ref(db, `users/${refUsername}`), {
-      score: Number(currentPoints) + 100,
+      score: Number(score) + 100,
     });
     e.target.parentNode.remove();
   });
@@ -124,12 +124,12 @@ window.addEventListener("load", async () => {
         const referralDetails = await Promise.all(
           currentReferrals.map(async (refItem) => {
             const refDataSnapshot = await get(
-              ref(db, `users/${refItem}/points`)
+              ref(db, `users/${refItem}/score`)
             );
-            const point = refDataSnapshot.exists() ? refDataSnapshot.val() : 1;
+            const score = refDataSnapshot.exists() ? refDataSnapshot.val() : 1;
             const details = {
               username: refItem,
-              points: point,
+              score: score,
             };
             return details;
           })
