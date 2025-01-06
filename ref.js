@@ -49,7 +49,7 @@ const renderRefBoard = (refData) => {
             </div>
             <h2>
               ${ref.username} 
-              <span>+${ref.points} SAPA</span>
+              <span>+${ref.points} Rex</span>
             </h2>
           </li>
     `;
