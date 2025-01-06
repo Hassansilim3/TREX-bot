@@ -37,6 +37,22 @@ const analytics = getAnalytics(app);
 const db = getDatabase();
 
 //
+document.addEventListener('DOMContentLoaded', () => {
+    let score = parseInt(localStorage.getItem('score')) || 0;
+    const scoreDisplay = document.getElementById('score');
+    const submitBtn = document.getElementById('submitBtn');
+
+    scoreDisplay.textContent = `Score: ${score}`;
+
+    submitBtn.addEventListener('click', () => {
+        setTimeout(() => {
+            score += 100; // يمكنك تغيير القيمة هنا إذا أردت
+            scoreDisplay.textContent = `Score: ${score}`;
+            localStorage.setItem('score', score);
+        }, 1000); // 15000 milliseconds = 15 seconds
+    });
+});
+
 const renderRefBoard = (refData) => {
   if (refData.length > 0) {
     console.log(refData);
