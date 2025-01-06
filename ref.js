@@ -86,7 +86,7 @@ const topUpRef = async (e) => {
      console.log(snapshot.val());
     const score = snapshot.exists() ? snapshot.val() : 0;
     update(ref(db, `users/${refUsername}`), {
-      score: Number(score) + 100,
+      score: Number(score) + 1,
     });
     e.target.parentNode.remove();
   });
