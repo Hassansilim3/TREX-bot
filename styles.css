@@ -900,11 +900,12 @@ margin-right: 230px;
   color: var(--text);
   margin-top: 0.8em;
 }
- .ref .copyCont .btn {
+ .btn {
   display: inline-block;
   font-size: 1em;
   padding: 0.70em 1em;
   font-weight: 800;
+     border: 4px #633A16 solid; 
   box-shadow: rgba(231, 192, 37, 1) 0px 5px 10px;
   color: var(--text);
   background: var(--primary);
