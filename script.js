@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scoreDisplay = document.getElementById('score');
     const buttons = {
         button50: 90,
+        button100: 100,    
         button150: 150,
         button250: 250,
         button300: 300
