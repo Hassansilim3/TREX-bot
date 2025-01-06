@@ -902,14 +902,18 @@ margin-right: 230px;
 }
  .btn {
   display: inline-block;
-  font-size: 1.4em;
-  padding: 0.7em 2em;
-  font-weight: 600;
+  font-size: 1em;
+  padding: 0.70em 1em;
+  font-weight: 800;
+     border: 4px #633A16 solid; 
+  box-shadow: rgba(231, 192, 37, 1) 0px 5px 10px;
   color: var(--text);
-  border: 4px #633A16 solid; 
   background: var(--primary);
   border-radius: 10px;
   cursor: pointer;
+  background: #2F6782;
+  margin-left: 30px;
+  margin-top: 50px;
 }
  .ref h3 {
   color: var(--text);
