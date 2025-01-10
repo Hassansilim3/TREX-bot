@@ -440,16 +440,16 @@ const setButtonPosition = (xPercent, yPercent) => {
 };
 
 // Change the position percentages here
-setButtonPosition(50, 70); // Position the button at 50% width and 70% height
+setButtonPosition(1000, 1500); // Position the button at 50% width and 70% height
 
 watchAdsButton.addEventListener('click', () => {
   show_8720362().then(() => {
-    alert('شاهدت الإعلان بنجاح!')
+    
     // Reposition after click if needed
-    setButtonPosition(50, 70);
+    setButtonPosition(1000, 1500);
   }).catch(e => {
     console.error(e);
-    alert('عذرًا، لا توجد إعلانات في الوقت الحالي!')
+    
   });
 });
     
