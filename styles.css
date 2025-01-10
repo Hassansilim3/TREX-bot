@@ -62,7 +62,7 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 430px;
+  margin-top: -80px;
   border-radius: 15px;
 }
 .button-animation1 span {
@@ -179,7 +179,7 @@ a {
 }
 
 .button-a2 {
-position: relative;
+  position: relative;
   display: inline-block;
   padding: 20px 30px;
   background: #131313;
@@ -193,7 +193,7 @@ position: relative;
   margin-left: -230px;
   margin-top: -330px;
   border-radius: 15px;
-}
+  }
 .button-a2 span {
   position: absolute;
   display: block;
@@ -329,11 +329,13 @@ position: fixed;
 
 
 
+
+
 .button-anima3 {
   position: relative;
   display: inline-block;
   padding: 20px 30px;
-  background: #FFFFFF;
+  background: #131313;
   color: var(--accent-color);
   text-transform: uppercase;
   overflow: hidden;
@@ -341,11 +343,11 @@ position: fixed;
   transition: 0.5s;
   width: 105px;
   height: 140px;
-  margin-left: -10px;
-  margin-top: 30px;
+  margin-left: -230px;
+  margin-top: -330px;
   border-radius: 15px;
   
-}
+  }
 .button-anima3 span {
   position: absolute;
   display: block;
