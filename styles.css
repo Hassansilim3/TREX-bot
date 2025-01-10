@@ -179,7 +179,7 @@ a {
 }
 
 .button-a2 {
-  position: relative;
+position: relative;
   display: inline-block;
   padding: 20px 30px;
   background: #131313;
@@ -330,9 +330,10 @@ position: fixed;
 
 
 .button-anima3 {
-  
+  position: relative;
+  display: inline-block;
   padding: 20px 30px;
-  background: #131313;
+  background: #FFFFFF;
   color: var(--accent-color);
   text-transform: uppercase;
   overflow: hidden;
