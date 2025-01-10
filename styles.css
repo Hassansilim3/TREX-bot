@@ -62,7 +62,7 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 150px;
+  margin-top: 200px;
   border-radius: 15px;
 }
 .button-animation1 span {
@@ -342,7 +342,7 @@ position: fixed;
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: -80px;
+  margin-top: 180px;
   border-radius: 15px;
   
 }
