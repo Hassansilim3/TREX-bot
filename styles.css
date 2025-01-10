@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+  box-shadow: var(--box-shadow);
+}
+
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -62,7 +65,7 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 300px;
+  margin-top: -80px;
   border-radius: 15px;
 }
 .button-animation1 span {
@@ -191,9 +194,9 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 30px;
+  margin-top: -330px;
   border-radius: 15px;
-  }
+}
 .button-a2 span {
   position: absolute;
   display: block;
@@ -329,8 +332,6 @@ position: fixed;
 
 
 
-
-
 .button-anima3 {
   position: relative;
   display: inline-block;
@@ -344,10 +345,10 @@ position: fixed;
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: -630px;
+  margin-top: -330px;
   border-radius: 15px;
   
-  }
+}
 .button-anima3 span {
   position: absolute;
   display: block;
