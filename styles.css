@@ -330,8 +330,7 @@ position: fixed;
 
 
 .button-anima3 {
-  position: fixed;
-  display: inline-block;
+  
   padding: 20px 30px;
   background: #131313;
   color: var(--accent-color);
@@ -342,7 +341,7 @@ position: fixed;
   width: 105px;
   height: 140px;
   margin-left: -10px;
-  margin-top: 300px;
+  margin-top: 30px;
   border-radius: 15px;
   
 }
