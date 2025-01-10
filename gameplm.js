@@ -119,7 +119,7 @@ document.getElementById('transfer-100').addEventListener('click', function() {
 				frag += '<div class="card" data-id="'+ v.id +'"><div class="inside">\
 				<div class="front"><img src="'+ v.img +'"\
 				alt="'+ v.name +'" /></div>\
-				<div class="back"><img src="/assets/img/Photoroom-٢٠٢٤١٢٢٥_٠١٣٤١٠.png"\
+				<div class="back"><img src="Photoroom-٢٠٢٤١٢٢٥_٠١٣٤١٠.png"\
 				alt="Codepen" /></div></div>\
 				</div>';
 			});
@@ -130,62 +130,62 @@ document.getElementById('transfer-100').addEventListener('click', function() {
 	var cards = [
 		{
 			name: "php",
-			img: "/IMG_20250109_180651_850.jpg",
+			img: "IMG_20250109_180651_850.jpg",
 			id: 1,
 		},
 		{
 			name: "css3",
-			img: "/IMG_20250109_175417_813.jpg",
+			img: "IMG_20250109_175417_813.jpg",
 			id: 2
 		},
 		{
 			name: "html5",
-			img: "/IMG_20250109_175531_750.jpg",
+			img: "IMG_20250109_175531_750.jpg",
 			id: 3
 		},
 		{
 			name: "jquery",
-			img: "/IMG_20250109_175758_607.jpg",
+			img: "IMG_20250109_175758_607.jpg",
 			id: 4
 		}, 
 		{
 			name: "javascript",
-			img: "/IMG_20250109_175832_729.jpg",
+			img: "IMG_20250109_175832_729.jpg",
 			id: 5
 		},
 		{
 			name: "node",
-			img: "/IMG_20250109_175920_278.jpg",
+			img: "IMG_20250109_175920_278.jpg",
 			id: 6
 		},
 		{
 			name: "photoshop",
-			img: "/IMG_20250109_180115_381.jpg",
+			img: "IMG_20250109_180115_381.jpg",
 			id: 7
 		},
 		{
 			name: "python",
-			img: "/IMG_20250109_180424_491.jpg",
+			img: "IMG_20250109_180424_491.jpg",
 			id: 8
 		},
 		{
 			name: "rails",
-			img: "/IMG_20250109_180430_942.jpg",
+			img: "IMG_20250109_180430_942.jpg",
 			id: 9
 		},
 		{
 			name: "sass",
-			img: "/IMG_20250109_231610_482.jpg",
+			img: "IMG_20250109_231610_482.jpg",
 			id: 10
 		},
 		{
 			name: "sublime",
-			img: "/IMG_20250109_231549_590.jpg",
+			img: "IMG_20250109_231549_590.jpg",
 			id: 11
 		},
 		{
 			name: "wordpress",
-			img: "/IMG_20250109_231519_780.jpg",
+			img: "IMG_20250109_231519_780.jpg",
 			id: 12
 		},
 	];
