@@ -62,7 +62,7 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 450px;
+  margin-top: 430px;
   border-radius: 15px;
 }
 .button-animation1 span {
@@ -330,7 +330,7 @@ position: fixed;
 
 
 .button-anima3 {
-  position: relative;
+  position: fixed;
   display: inline-block;
   padding: 20px 30px;
   background: #131313;
@@ -339,7 +339,7 @@ position: fixed;
   overflow: hidden;
   letter-spacing: 4px;
   transition: 0.5s;
-  width: 205px;
+  width: 105px;
   height: 140px;
   margin-left: -10px;
   margin-top: 300px;
