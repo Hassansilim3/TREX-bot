@@ -26,7 +26,16 @@
   
   
 }
-
+.body-body{
+  
+  background-image: url('5dbaace86296558c75550487f8755b19.jpg'); /* تأكد من وجود الصورة في نفس مجلد ملف HTML أو قم بتحديد المسار الصحيح */
+          
+      
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
