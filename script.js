@@ -1,34 +1,34 @@
 
-let points = parseInt(localStorage.getItem('points')) || 0;
+let score = parseInt(localStorage.getItem('score')) || 0;
         let startTime = parseInt(localStorage.getItem('startTime')) || null;
-        let initialPoints = points;
+        let initialscore = score;
         let mining = false;
-        const pointsDisplay = document.getElementById('currentPoints');
+        const scoreDisplay = document.getElementById('currentscore');
         const startButton = document.getElementById('start');
-        const miningInterval = 30000; // كل 432 ثانية (432000 مللي ثانية)
+        const miningInterval = 300; // كل 432 ثانية (432000 مللي ثانية)
 
         // تحديث عرض النقاط
-        function updatePoints() {
-            pointsDisplay.textContent = points;
-            localStorage.setItem('points', points); // حفظ النقاط في localStorage
+        function updatescore() {
+            scoreDisplay.textContent = score;
+            localStorage.setItem('score', score); // حفظ النقاط في localStorage
         }
 
         // حساب النقاط بناءً على الوقت المنقضي
-        function calculatePoints() {
+        function calculatescore() {
             if (startTime) {
                 const elapsedTime = Date.now() - startTime;
                 const intervals = Math.floor(elapsedTime / miningInterval); // حساب الفترات الزمنية المنقضية
-                const newPoints = intervals - (parseInt(localStorage.getItem('calculatedIntervals')) || 0); // حساب النقاط الجديدة بناءً على الفترات الزمنية المحسوبة
-                points += newPoints > 0 ? newPoints : 0; // إضافة النقاط الجديدة إلى النقاط الموجودة
+                const newscore = intervals - (parseInt(localStorage.getItem('calculatedIntervals')) || 0); // حساب النقاط الجديدة بناءً على الفترات الزمنية المحسوبة
+                score += newscore > 0 ? newscore : 0; // إضافة النقاط الجديدة إلى النقاط الموجودة
                 localStorage.setItem('calculatedIntervals', intervals); // حفظ الفترات الزمنية المحسوبة
-                updatePoints();
+                updatescore();
             }
         }
 
         // بدء التعدين
         function startMining() {
-            points = parseInt(localStorage.getItem('points')) || 0; // تحديث النقاط عند البدء
-            initialPoints = points; // حفظ النقاط الحالية كبداية
+            score = parseInt(localStorage.getItem('score')) || 0; // تحديث النقاط عند البدء
+            initialscore = score; // حفظ النقاط الحالية كبداية
             startTime = Date.now(); // تسجيل وقت البدء
             localStorage.setItem('startTime', startTime);
             localStorage.setItem('calculatedIntervals', 0); // إعادة تعيين الفترات الزمنية المحسوبة
@@ -39,7 +39,7 @@ let points = parseInt(localStorage.getItem('points')) || 0;
 
         // التعدين بشكل مستمر
         function miningLoop() {
-            calculatePoints();
+            calculatescore();
             if (mining) {
                 setTimeout(miningLoop, 1000); // يحدث التحديث كل ثانية
             }
@@ -54,22 +54,19 @@ let points = parseInt(localStorage.getItem('points')) || 0;
         // عند تحميل الصفحة
         function onLoad() {
             if (startTime) {
-                calculatePoints();
+                calculatescore();
                 const elapsedTime = Date.now() - startTime;
-                if (elapsedTime < 43200000 && (points - initialPoints) < 1000) { // 43200000 مللي ثانية = 12 ساعة، توقف عند 1000 نقطة جديدة
+                if (elapsedTime < 43200000 && (score - initialscore) < 1000) { // 43200000 مللي ثانية = 12 ساعة، توقف عند 1000 نقطة جديدة
                     mining = true;
                     startButton.disabled = true;
                     miningLoop(); // استمر في التعدين عند الدخول للصفحة
                 }
             }
-            updatePoints();
+            updatescore();
         }
 
         startButton.addEventListener('click', startMining);
         window.addEventListener('load', onLoad);
-    
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     let score = parseInt(localStorage.getItem('score')) || 0;
