@@ -26,6 +26,207 @@
   
   
 }
+    :root {
+        --yellow: #ffc744;
+        --red: #ff0062;
+        --blue: #3ae8ff;
+        --violet: #e72fff;
+    }
+
+    
+
+    .apkhuher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apkhuher>div {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        margin: 2vw;
+        position: fixed;
+        margin-left: -90px;
+        margin-top: 460px;
+        background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        animation: bounce 1.5s 0.5s linear infinite;
+    }
+
+
+    .violet {
+        background-color: var(--violet);
+        animation-delay: 0.3s;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        50%,
+        100% {
+            transform: scale(1);
+            filter: blur(0px);
+        }
+
+        25% {
+            transform: scale(0.6);
+            filter: blur(3px);
+        }
+
+        75% {
+            filter: blur(3px);
+            transform: scale(1.4);
+        }
+    }
+        .apkhuhe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apkhuhe>div {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        margin: 2vw;
+        position: fixed;
+        margin-left: -170px;
+        margin-top: 460px;
+        background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        animation: bounc 1.5s 0.5s linear infinite;
+    }
+
+    .blue {
+        background-color: var(--blue);
+        animation-delay: 0.2s;
+    }
+   
+
+    @keyframes bounc {
+
+        0%,
+        50%,
+        100% {
+            transform: scale(1);
+            filter: blur(0px);
+        }
+
+        25% {
+            transform: scale(0.6);
+            filter: blur(3px);
+        }
+
+        75% {
+            filter: blur(3px);
+            transform: scale(1.4);
+        }
+    }
+        .apkhu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apkhu>div {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        margin: 2vw;
+        position: fixed;
+        margin-left: -210px;
+        margin-top: 460px;
+        background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        animation: bou 1.5s 0.5s linear infinite;
+    }
+    .apkhuher-max{
+      
+margin-left: -20px;
+      
+    }
+
+
+    .yellow {
+        background-color: var(--yellow);
+    }
+    
+
+    @keyframes bou {
+
+        0%,
+        50%,
+        100% {
+            transform: scale(1);
+            filter: blur(0px);
+        }
+
+        25% {
+            transform: scale(0.6);
+            filter: blur(3px);
+        }
+
+        75% {
+            filter: blur(3px);
+            transform: scale(1.4);
+        }
+    }
+
+            .apkhuh {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apkhuh>div {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        margin: 2vw;
+        position: fixed;
+        margin-left: -130px;
+        margin-top: 460px;
+        background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        animation: boun 1.5s 0.5s linear infinite;
+    }
+
+    .red {
+        background-color: var(--red);
+        animation-delay: 0.1s;
+    }
+   
+
+    @keyframes boun {
+
+        0%,
+        50%,
+        100% {
+            transform: scale(1);
+            filter: blur(0px);
+        }
+
+        25% {
+            transform: scale(0.6);
+            filter: blur(3px);
+        }
+
+        75% {
+            filter: blur(3px);
+            transform: scale(1.4);
+        }
+    }
+
+  .mining-rex{
+            
+            background-image: url("/mining-rex.png") ;
+                width: 280px;
+                height: 100px;
+                border-radius: 80px;
+                border: none;
+                position: fixed;
+                margin-top: 150px;
+                margin-left: -225px;
+            background-size: 350px;
+            background-position: center;
+  }
 .body-body{
   
   background-image: url('5dbaace86296558c75550487f8755b19.jpg'); /* تأكد من وجود الصورة في نفس مجلد ملف HTML أو قم بتحديد المسار الصحيح */
