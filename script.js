@@ -288,7 +288,6 @@ if (window.Telegram && window.Telegram.WebApp) {
 const $score = document.querySelector('.game__score');
 const $balance = document.querySelector('.boost-menu__balance');
 const $circle = document.querySelector('.game__clicker-circle');
-const $mainImg = document.querySelector('.game__main-image');
 const $energy = document.querySelector('.energy__value');
 const $maxEnergy = document.querySelector('.energy__max');
  const $toLvlUp = document.querySelector("#to-lvl-up");
@@ -753,7 +752,7 @@ if (getCoinsPerHour() > 0) {
 const $barItems = document.querySelectorAll('.menu-bar__item');
 const $tabContents = document.querySelectorAll('.tab-content');
 const $gameContent = document.querySelectorAll(
-  '.game__header, .game__clicker-circle, .game__footer, .info'
+  '.game__header, .game__footer, .info'
 );
 
 $barItems.forEach((barItem) => {
