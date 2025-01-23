@@ -419,47 +419,6 @@ setInterval(() => {
   }
 }, 2000);
 
-$circle.addEventListener('click', (event) => {
-  if (getEnergy() >= getCoinsPerTap()) {
-    // Vibration
-    if (navigator.vibrate) {
-      navigator.vibrate(200);
-    }
-    const rect = $circle.getBoundingClientRect();
-    const offsetX = event.clientX - rect.left - rect.width / 2;
-    const offsetY = event.clientY - rect.top - rect.height / 2;
-    const DEG = 40;
-
-    const tiltX = (offsetY / rect.height) * DEG;
-    const tiltY = (offsetX / rect.width) * -DEG;
-
-    $circle.style.setProperty('--tiltX', `${tiltX}deg`);
-    $circle.style.setProperty('--tiltY', `${tiltY}deg`);
-
-    setTimeout(() => {
-      $circle.style.setProperty('--tiltX', `0deg`);
-      $circle.style.setProperty('--tiltY', `0deg`);
-    }, 300);
-
-    const coinsPerTap = getCoinsPerTap();
-    const plusCoins = document.createElement('div');
-    plusCoins.classList.add('plusCoins');
-    plusCoins.textContent = '+' + coinsPerTap;
-    plusCoins.style.left = `${event.clientX}px`;
-    plusCoins.style.top = `${event.clientY - 60}px`;
-
-    $circle.parentElement.appendChild(plusCoins);
-
-    addCoins(coinsPerTap);
-    setEnergy(getEnergy() - getCoinsPerTap());
-    updateLevel();
-    setMaxEnergy(getMaxEnergy());
-
-    setTimeout(() => {
-      plusCoins.remove();
-    }, 2000);
-  }
-});
 
 // Upgrades
 
