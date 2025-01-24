@@ -1,4 +1,3 @@
-
 let points = parseInt(localStorage.getItem('points')) || 0;
         let startTime = parseInt(localStorage.getItem('startTime')) || null;
         let initialPoints = points;
@@ -13,25 +12,22 @@ let points = parseInt(localStorage.getItem('points')) || 0;
             localStorage.setItem('points', points); // حفظ النقاط في localStorage
         }
 
-        // حساب النقاط بناءً على الوقت المنقضي
+        // حساب النقاط بناءً على الوقت المنقضى
         function calculatePoints() {
             if (startTime) {
                 const elapsedTime = Date.now() - startTime;
                 const intervals = Math.floor(elapsedTime / miningInterval); // حساب الفترات الزمنية المنقضية
-                const newPoints = intervals - (parseInt(localStorage.getItem('calculatedIntervals')) || 0); // حساب النقاط الجديدة بناءً على الفترات الزمنية المحسوبة
-                points += newPoints > 0 ? newPoints : 0; // إضافة النقاط الجديدة إلى النقاط الموجودة
-                localStorage.setItem('calculatedIntervals', intervals); // حفظ الفترات الزمنية المحسوبة
+                points = initialPoints + intervals; // إضافة النقاط الجديدة إلى النقاط الموجودة
                 updatePoints();
             }
         }
 
         // بدء التعدين
         function startMining() {
-            points = parseInt(localStorage.getItem('points')) || 0; // تحديث النقاط عند البدء
             initialPoints = points; // حفظ النقاط الحالية كبداية
             startTime = Date.now(); // تسجيل وقت البدء
             localStorage.setItem('startTime', startTime);
-            localStorage.setItem('calculatedIntervals', 0); // إعادة تعيين الفترات الزمنية المحسوبة
+            localStorage.setItem('initialPoints', initialPoints); // حفظ النقاط الحالية كبداية
             startButton.disabled = true;
             mining = true;
             miningLoop();
@@ -41,7 +37,7 @@ let points = parseInt(localStorage.getItem('points')) || 0;
         function miningLoop() {
             calculatePoints();
             if (mining) {
-                setTimeout(miningLoop, miningInterval); // يحدث التحديث كل 28.8 ثانية (28800 مللي ثانية)
+                setTimeout(miningLoop, 1000); // يحدث التحديث كل ثانية
             }
         }
 
@@ -53,14 +49,16 @@ let points = parseInt(localStorage.getItem('points')) || 0;
 
         // عند تحميل الصفحة
         function onLoad() {
-            if (startTime) {
-                calculatePoints();
-                const elapsedTime = Date.now() - startTime;
-                if (elapsedTime < 28800000 && points < 1000) { // 28800000 مللي ثانية = 8 ساعات، توقف عند 1000 نقطة جديدة
-                    mining = true;
-                    startButton.disabled = true;
-                    miningLoop(); // استمر في التعدين عند الدخول للصفحة
-                }
+            startTime = parseInt(localStorage.getItem('startTime')) || null;
+            initialPoints = parseInt(localStorage.getItem('initialPoints')) || points;
+            calculatePoints();
+            const elapsedTime = Date.now() - startTime;
+            if (elapsedTime < 28800000 && points < 1000) { // 28800000 مللي ثانية = 8 ساعات، توقف عند 1000 نقطة جديدة
+                mining = true;
+                startButton.disabled = true;
+                miningLoop(); // استمر في التعدين عند الدخول للصفحة
+            } else {
+                stopMining();
             }
             updatePoints();
         }
