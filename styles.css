@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
-  box-shadow: var(--box-shadow);
-}
-
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -21,11 +18,632 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-.button-animation-max{
-  
-  
+.poiuytrlkn{
+ margin-top: -15px;  
+    }
+    .odddd{
+  margin-top: 20px;
   
 }
+.ttto{
+  display: flex;
+    justify-content: space-between;
+    background-color: #157866;
+    align-items: center;
+    width: 130px;
+    height: 60px ;
+    border: 1px solid #444;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    margin-top: 20px;
+    
+    flex-direction: column;
+    gap: 10px;
+  
+}
+.ttto img{
+  width: 40px;
+  height: 40px;
+  margin-top: -5px;
+  margin-left: -70px;
+}
+.tttoo img{
+  width: 40px;
+  height: 40px;
+  margin-top: -5px;
+  margin-left: -70px;
+}
+ .tttoo .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+       .tttoo .qwe h5{
+       color: #519600; 
+          position: fixed;
+        margin-top: 3px;
+        margin-left: 21px;
+        }
+               .tttoo .qwert h5{
+       color: #519600; 
+          position: fixed;
+        margin-top: 3px;
+        margin-left: 21px;
+        }
+               .tttoo .qwery h5{
+       color: #519600; 
+          position: fixed;
+        margin-top: 3px;
+        margin-left: 21px;
+        }
+               .tttoo .qwer h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .tttoo .qwery h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .tttoo .qweryu h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .tttoo .qweryui h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .tttoo .qweryuio h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+        .earn__section-title {
+    color: #fff;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 12px;
+  
+}
+
+       .tttoo .qwer h1{
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+               .tttoo .qwe h1{
+          color: #E2E2E2;
+          font-size: 15px;
+          margin-left: 31px;
+  margin-top: 3px;
+        }
+               .tttoo .qwery h1 {
+          color: #E2E2E2;
+          font-size: 15px;
+          margin-left: 31px;
+       margin-top: 3px;
+        }
+               .tttoo .qweryu h1 {
+          color: #E2E2E2;
+          font-size: 15px;
+          margin-left: 31px;
+       margin-top: 3px;
+        }
+               .tttoo .qweryui h1 {
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+               .tttoo .qweryuio h1 {
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+             .tttoo .qwert h1 {
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+
+          
+       .tttoo .qwe{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+   
+             .tttoo .qwe img{
+          width: 33px;
+          height: 33px;
+          margin-top: 21px;
+          margin-left: 22px;
+        }
+             .tttoo .qwer img {
+        width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+           .tttoo .qwery img {
+        width: 33px;
+        height: 33px;
+        margin-top: 21px;
+        margin-left: 22px;
+      }
+           .tttoo .qweryu img {
+        width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+           .tttoo .qweryuio img {
+width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+           
+          .tttoo .qwert img {
+        width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+            .tttoo .qweryui img {
+              width: 33px;
+        height: 33px;
+        margin-top: 21px;
+        margin-left: 22px;
+            }
+                .tttoo .qwer{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+                       .tttoo .qwert{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 115px;
+        }
+               .tttoo .qwery{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: -270px;
+          margin-left: 115px;
+        }
+         .tttoo .qweryu{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: -80px;
+          margin-left: 205px;
+          
+        }
+                  .tttoo .qweryui{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 115px;
+          
+        }
+              .tttoo .qweryuio{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: -80px;
+          margin-left: 205px;
+          
+        }
+     .tttoo .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 310px;
+            background-image: url('Photoroom-٢٠٢٥٠١٣٠_١٥٤٩٥٥.png');
+  background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
+            z-index: 900;
+            margin-top: -430px;
+            margin-left: -246px;
+            min-height: 320px;
+            border-radius: 15px;
+        }
+
+        
+
+    .tttoo .dropdown:hover .dropdown-content {
+            display: block;
+        }
+.tttoo .dropdown button{
+  position: fixed;
+  width: 40px;
+  height: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+  background: #E1C210;
+  border: 3px solid #222427;
+  margin-left: 15px;
+  color: #FFFFFF;
+ margin-top: -41px;
+}
+       .ttto .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+       .ttto .qwe h5{
+       color: #519600; 
+          position: fixed;
+        margin-top: 3px;
+        margin-left: 21px;
+        }
+               .ttto .qwert h5{
+       color: #519600; 
+          position: fixed;
+        margin-top: 3px;
+        margin-left: 21px;
+        }
+               .ttto .qwery h5{
+       color: #519600; 
+          position: fixed;
+        margin-top: 3px;
+        margin-left: 21px;
+        }
+               .ttto .qwer h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .ttto .qwery h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .ttto .qweryu h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .ttto .qweryui h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+               .ttto .qweryuio h5 {
+          color: #519600;
+          position: fixed;
+          margin-top: 3px;
+          margin-left: 21px;
+        }
+       .ttto .qwer h1{
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+               .ttto .qwe h1{
+          color: #E2E2E2;
+          font-size: 15px;
+          margin-left: 31px;
+  margin-top: 3px;
+        }
+               .ttto .qwery h1 {
+          color: #E2E2E2;
+          font-size: 15px;
+          margin-left: 31px;
+       margin-top: 3px;
+        }
+               .ttto .qweryu h1 {
+          color: #E2E2E2;
+          font-size: 15px;
+          margin-left: 31px;
+       margin-top: 3px;
+        }
+               .ttto .qweryui h1 {
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+               .ttto .qweryuio h1 {
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+             .ttto .qwert h1 {
+          color: #E2E2E2;
+font-size: 15px;
+margin-left: 31px;
+margin-top: 3px;
+        }
+
+          
+       .ttto .qwe{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+   
+             .ttto .qwe img{
+          width: 33px;
+          height: 33px;
+          margin-top: 21px;
+          margin-left: 22px;
+        }
+             .ttto .qwer img {
+        width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+           .ttto .qwery img {
+        width: 33px;
+        height: 33px;
+        margin-top: 21px;
+        margin-left: 22px;
+      }
+           .ttto .qweryu img {
+        width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+           .ttto .qweryuio img {
+width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+           
+          .ttto .qwert img {
+        width: 33px;
+height: 33px;
+margin-top: 21px;
+margin-left: 22px;
+      }
+            .ttto .qweryui img {
+              width: 33px;
+        height: 33px;
+        margin-top: 21px;
+        margin-left: 22px;
+            }
+                .ttto .qwer{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 25px;
+        }
+                       .ttto .qwert{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 115px;
+        }
+               .ttto .qwery{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: -270px;
+          margin-left: 115px;
+        }
+         .ttto .qweryu{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: -80px;
+          margin-left: 205px;
+          
+        }
+                  .ttto .qweryui{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: 15px;
+          margin-left: 115px;
+          
+        }
+              .ttto .qweryuio{
+          background: #3C3E4C;
+          width: 80px;
+          height: 80px ;
+          border-radius: 10px;
+          margin-top: -80px;
+          margin-left: 205px;
+          
+        }
+     .ttto .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 310px;
+            background-image: url('Photoroom-٢٠٢٥٠١٣٠_١٥٤٩٥٥.png');
+  background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
+            z-index: 900;
+            margin-top: -430px;
+            margin-left: -70px;
+            min-height: 320px;
+            border-radius: 15px;
+        }
+
+        
+
+    .ttto .dropdown:hover .dropdown-content {
+            display: block;
+        }
+.ttto .dropdown button{
+  position: fixed;
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 17px;
+  background: #0F4ABF;
+  color: #FFFFFF;
+  border: 3px solid #222427;
+  margin-left: 15px;
+  margin-top: -45px;
+}
+
+.tttoo{
+  display: flex;
+    justify-content: space-between;
+    background-color: #157866;
+    align-items: center;
+    width: 130px;
+    position: fixed;
+    margin-left: 170px;
+    height: 60px ;
+    border: 1px solid #444;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    margin-top: -60px;
+    
+    flex-direction: column;
+    gap: 10px;
+  
+}
+
+      /* تخصيص ستايل الرسائل */
+      .custom-alert {
+        background-image: url('165eed214320595af39e33ca36c30888.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        color: #3DD80B;
+        border-radius: 15px;
+        padding: 25px;
+        position: fixed;
+        top: 50%;
+        width: 270px;
+        left: 50%;
+        height: 200px;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        text-align: center;
+      }
+      .poiuhb{
+        
+        font-size: 20px;
+        margin-top: -20px;
+      }
+      .custom-alert img {
+        max-width: 120px;
+        margin-bottom: 10px;
+      }
+      .custom-alert button {
+        background-color: black;
+        color: white;
+        border: none;
+        width: 80px;
+        font-size: 15px;
+        height: 50px; 
+        border-radius: 15px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+.plmnjiok{
+  
+  margin-top: 20px;
+
+  
+}
+.plmnjio{
+  
+  margin-top: 20px;
+
+  
+}
+
+
+
+
+
+   .boxmax{
+            
+            display: none; /* إخفاء المربع افتراضيًا */
+        }
+.menu__earnx{
+  width: 300px;
+  height: 60px;
+  border-radius: 15px;
+  margin-top: -20px;
+  background: #21244A;
+}
+.earnx1{
+  width: 70px;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 15px;
+  background: #1BCF63;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.earnx2{
+  width: 70px;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 15px;
+  background: #1BCF63;
+  margin-left: 115px;
+  position: relative;
+  top: -10px;
+  color: #E3000A;
+}
+.earnx3 {
+  width: 70px;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 15px;
+  background: #1BCF63;
+margin-left: 115px;
+top: -50px;
+position: relative;
+                 }
     :root {
         --yellow: #ffc744;
         --red: #ff0062;
