@@ -78,7 +78,7 @@ document.querySelectorAll('.qwe, .qwery, .qweryu, .qwer, .qweryui, .qweryuio, .q
       });
       console.log('Transaction successful:', transaction);
       // تخصيص رسالة النجاح
-      showCustomAlert(`🎉 Payment successful! Paid ${amount} TON. Thank you for using our service.`, '/Photoroom-٢٠٢٥٠١٣٠_١٤٥٥٥٦.png', () => {
+      showCustomAlert(`🎉 Payment successful! Paid ${amount} TON. Thank you for using our service.`, 'Photoroom-٢٠٢٥٠١٣٠_١٤٥٥٥٦.png', () => {
         // تغيير الزر الحالي إلى اللون الرمادي بعد الدفع الناجح
         div.classList.remove('enabled');
         div.classList.add('disabled');
@@ -91,7 +91,7 @@ document.querySelectorAll('.qwe, .qwery, .qweryu, .qwer, .qweryui, .qweryuio, .q
     } catch (error) {
       console.error('Transaction failed:', error);
       // تخصيص رسالة الفشل
-      showCustomAlert('😢 Payment failed. Please try again.', '/Photoroom-٢٠٢٥٠١٣٠_٠٩١٥٢٨.png');
+      showCustomAlert('😢 Payment failed. Please try again.', 'Photoroom-٢٠٢٥٠١٣٠_٠٩١٥٢٨.png');
     }
   });
 });
