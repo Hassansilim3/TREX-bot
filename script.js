@@ -503,15 +503,15 @@ function updateLevel() {
 
 function updateImage(level) {
   const octopusImages = {
-    0: 'assets/img/levels/lvl0.png',
-    1: 'assets/img/levels/lvl1.png',
-    2: 'assets/img/levels/lvl2.png',
-    3: 'assets/img/levels/lvl3.png',
-    4: 'assets/img/levels/lvl4.png',
-    5: 'assets/img/levels/lvl5.png',
-    6: 'assets/img/levels/lvl6.png',
-    7: 'assets/img/levels/lvl7.png',
-    8: 'assets/img/levels/lvl8.png',
+    0: 'lvl0.png',
+    1: 'lvl1.png',
+    2: 'lvl2.png',
+    3: 'lvl3.png',
+    4: 'lvl4.png',
+    5: 'lvl5.png',
+    6: 'lvl6.png',
+    7: 'lvl7.png',
+    8: 'lvl8.png',
     
   };
    playerIcon.src = octopusImages[level]
