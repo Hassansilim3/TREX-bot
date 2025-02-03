@@ -1,33 +1,144 @@
-let score = parseInt(localStorage.getItem('score')) || 0;
+const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+  manifestUrl: 'https://hassansilim3.github.io/TREX-bot//tonconnect-manifest.json',
+  buttonRootId: 'ton-connect'
+});
+
+// استماع لحدث الاتصال
+tonConnectUI.onStatusChange((status) => {
+  if (status === 'CONNECTED') {
+    console.log('Connected to wallet');
+  } else {
+    console.log('Disconnected from wallet');
+  }
+});
+
+// إنشاء دالة لعرض الرسائل المخصصة
+function showCustomAlert(message, imageUrl, callback) {
+  const alertDiv = document.createElement('div');
+  alertDiv.classList.add('custom-alert');
+  alertDiv.innerHTML = `<img src="${imageUrl}" class="poiuytrlkn" alt="Image"><p class="poiuhb">${message}</p><button>OK</button>`;
+  document.body.appendChild(alertDiv);
+
+  alertDiv.querySelector('button').addEventListener('click', () => {
+    document.body.removeChild(alertDiv);
+    if (callback) callback();
+  });
+}
+
+// دالة لتفعيل الزر التالي بعد فترة زمنية
+function activateNextButtonWithDelay(currentButton) {
+  const nextButton = currentButton.nextElementSibling;
+  if (nextButton && (nextButton.classList.contains('qwery') || nextButton.classList.contains('qweryu') || nextButton.classList.contains('qwer') || nextButton.classList.contains('qweryui') || nextButton.classList.contains('qweryuio') || nextButton.classList.contains('qwert'))) {
+    setTimeout(() => {
+      nextButton.classList.add('enabled');
+      nextButton.style.backgroundColor = '#f0f0f0';
+      nextButton.style.cursor = 'pointer';
+      nextButton.style.color = '#000';
+
+      nextButton.addEventListener('click', async () => {
+        const amount = nextButton.getAttribute('data-amount');
+        try {
+          const transaction = await tonConnectUI.sendTransaction({
+            validUntil: Date.now() + 5 * 60 * 1000, // صلاحية 5 دقائق
+            messages: [
+              {
+                address: 'UQDS3dF2uLozPX4cvt8lgTKhH-70pEl3dYCFpsqG5O6hgwNA',
+                amount: (parseFloat(amount) * 100000000).toString() // تحويل المبلغ إلى نانوتون
+                    }
+                  ]
+          });
+          console.log('Transaction successful:', transaction);
+          // تخصيص رسالة النجاح
+          showCustomAlert(`🎉 Payment successful! Paid ${amount} TON. Thank you for using our service.`, 'https://example.com/success.png', () => activateNextButtonWithDelay(nextButton));
+        } catch (error) {
+          console.error('Transaction failed:', error);
+          // تخصيص رسالة الفشل
+          showCustomAlert('😢 Payment failed. Please try again.', 'https://example.com/failure.png');
+        }
+      }, { once: true });
+    }, 24 * 60 * 60 * 1000); // تأخير يوم واحد (24 ساعة)
+  }
+}
+
+// حدث الضغط على عنصر الدفع
+document.querySelectorAll('.qwe, .qwery, .qweryu, .qwer, .qweryui, .qweryuio, .qwert').forEach(div => {
+  div.addEventListener('click', async () => {
+    if (!div.classList.contains('enabled')) return;
+
+    const amount = div.getAttribute('data-amount');
+    try {
+      const transaction = await tonConnectUI.sendTransaction({
+        validUntil: Date.now() + 5 * 60 * 1000, // صلاحية 5 دقائق
+        messages: [
+          {
+            address: 'UQDS3dF2uLozPX4cvt8lgTKhH-70pEl3dYCFpsqG5O6hgwNA',
+            amount: (parseFloat(amount) * 100000000).toString() // تحويل المبلغ إلى نانوتون
+                }
+              ]
+      });
+      console.log('Transaction successful:', transaction);
+      // تخصيص رسالة النجاح
+      showCustomAlert(`🎉 Payment successful! Paid ${amount} TON. Thank you for using our service.`, '/Photoroom-٢٠٢٥٠١٣٠_١٤٥٥٥٦.png', () => {
+        // تغيير الزر الحالي إلى اللون الرمادي بعد الدفع الناجح
+        div.classList.remove('enabled');
+        div.classList.add('disabled');
+        div.style.backgroundColor = '#ccc';
+        div.style.cursor = 'not-allowed';
+        div.style.color = '#aaa';
+
+        activateNextButtonWithDelay(div);
+      });
+    } catch (error) {
+      console.error('Transaction failed:', error);
+      // تخصيص رسالة الفشل
+      showCustomAlert('😢 Payment failed. Please try again.', '/Photoroom-٢٠٢٥٠١٣٠_٠٩١٥٢٨.png');
+    }
+  });
+});
+      
+    function showBox(boxId) {
+  // إخفاء جميع المربعات
+  const boxes = document.querySelectorAll('.boxmax');
+  boxes.forEach(box => box.style.display = 'none');
+
+  // عرض المربع المطلوب فقط
+  const selectedBox = document.getElementById(boxId);
+  selectedBox.style.display = 'block';
+}
+        
+        let points = parseInt(localStorage.getItem('points')) || 0;
         let startTime = parseInt(localStorage.getItem('startTime')) || null;
-        let initialscore = score;
+        let initialPoints = points;
         let mining = false;
-        const scoreDisplay = document.getElementById('currentscore');
+        const pointsDisplay = document.getElementById('currentPoints');
         const startButton = document.getElementById('start');
-        const miningInterval = 28800; // كل 28.8 ثانية (28800 مللي ثانية)
+        const miningInterval = 28800; // كل 432 ثانية (432000 مللي ثانية)
 
         // تحديث عرض النقاط
-        function updatescore() {
-            scoreDisplay.textContent = score;
-            localStorage.setItem('score', score); // حفظ النقاط في localStorage
+        function updatePoints() {
+            pointsDisplay.textContent = points;
+            localStorage.setItem('points', points); // حفظ النقاط في localStorage
         }
 
-        // حساب النقاط بناءً على الوقت المنقضى
-        function calculatescore() {
+        // حساب النقاط بناءً على الوقت المنقضي
+        function calculatePoints() {
             if (startTime) {
                 const elapsedTime = Date.now() - startTime;
                 const intervals = Math.floor(elapsedTime / miningInterval); // حساب الفترات الزمنية المنقضية
-                score = initialscore + intervals; // إضافة النقاط الجديدة إلى النقاط الموجودة
-                updatescore();
+                const newPoints = intervals - (parseInt(localStorage.getItem('calculatedIntervals')) || 0); // حساب النقاط الجديدة بناءً على الفترات الزمنية المحسوبة
+                points += newPoints > 0 ? newPoints : 0; // إضافة النقاط الجديدة إلى النقاط الموجودة
+                localStorage.setItem('calculatedIntervals', intervals); // حفظ الفترات الزمنية المحسوبة
+                updatePoints();
             }
         }
 
         // بدء التعدين
         function startMining() {
-            initialscore = score; // حفظ النقاط الحالية كبداية
+            points = parseInt(localStorage.getItem('points')) || 0; // تحديث النقاط عند البدء
+            initialPoints = points; // حفظ النقاط الحالية كبداية
             startTime = Date.now(); // تسجيل وقت البدء
             localStorage.setItem('startTime', startTime);
-            localStorage.setItem('initialscore', initialscore); // حفظ النقاط الحالية كبداية
+            localStorage.setItem('calculatedIntervals', 0); // إعادة تعيين الفترات الزمنية المحسوبة
             startButton.disabled = true;
             mining = true;
             miningLoop();
@@ -35,7 +146,7 @@ let score = parseInt(localStorage.getItem('score')) || 0;
 
         // التعدين بشكل مستمر
         function miningLoop() {
-            calculatescore();
+            calculatePoints();
             if (mining) {
                 setTimeout(miningLoop, 1000); // يحدث التحديث كل ثانية
             }
@@ -49,47 +160,22 @@ let score = parseInt(localStorage.getItem('score')) || 0;
 
         // عند تحميل الصفحة
         function onLoad() {
-            startTime = parseInt(localStorage.getItem('startTime')) || null;
-            initialscore = parseInt(localStorage.getItem('initialscore')) || score;
-            calculatescore();
-            const elapsedTime = Date.now() - startTime;
-            if (elapsedTime < 28800000 && score < 1000) { // 28800000 مللي ثانية = 8 ساعات، توقف عند 1000 نقطة جديدة
-                mining = true;
-                startButton.disabled = true;
-                miningLoop(); // استمر في التعدين عند الدخول للصفحة
-            } else {
-                stopMining();
+            if (startTime) {
+                calculatePoints();
+                const elapsedTime = Date.now() - startTime;
+                if (elapsedTime < 28800000 && (points - initialPoints) < 1000) { // 43200000 مللي ثانية = 12 ساعة، توقف عند 1000 نقطة جديدة
+                    mining = true;
+                    startButton.disabled = true;
+                    miningLoop(); // استمر في التعدين عند الدخول للصفحة
+                }
             }
-            updatescore();
+            updatePoints();
         }
 
         startButton.addEventListener('click', startMining);
         window.addEventListener('load', onLoad);
+    
 
-document.addEventListener('DOMContentLoaded', () => {
-    let score = parseInt(localStorage.getItem('score')) || 0;
-    const scoreDisplay = document.getElementById('score');
-    const buttons = {
-        button50: 90,
-        
-        button150: 150,
-        button250: 250,
-        button300: 300
-    };
-
-    scoreDisplay.textContent = `Score: ${score}`;
-
-    Object.keys(buttons).forEach(buttonId => {
-        const button = document.getElementById(buttonId);
-        button.addEventListener('click', () => {
-            setTimeout(() => {
-                score += buttons[buttonId];
-                scoreDisplay.textContent = `Score: ${score}`;
-                localStorage.setItem('score', score);
-            }, 15000); // 15000 milliseconds = 15 seconds
-        });
-    });
-});
 
 document.addEventListener('DOMContentLoaded', () => {
   let score = parseInt(localStorage.getItem('score')) || 0;
