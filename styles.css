@@ -887,8 +887,15 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 100px;
+  margin-top: -80px;
   border-radius: 15px;
+}
+.img222223 {
+
+  margin-top: 290px;
+  margin-left: -85px;
+  position: fixed;
+  width: 40px;
 }
 .button-animation1 span {
   position: absolute;
