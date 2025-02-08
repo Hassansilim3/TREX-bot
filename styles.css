@@ -894,7 +894,7 @@ a {
 
   margin-top: 290px;
   margin-left: -85px;
-  position: fixed;
+  position: absolute;
   width: 40px;
 }
 .button-animation1 span {
