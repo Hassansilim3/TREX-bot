@@ -25,6 +25,13 @@
   margin-top: 20px;
   
 }
+.img222223 {
+
+  margin-top: 290px;
+  margin-left: -85px;
+  position: fixed;
+  width: 40px;
+}
 .body-body{
   
   background-image: url('5dbaace86296558c75550487f8755b19.jpg'); /* تأكد من وجود الصورة في نفس مجلد ملف HTML أو قم بتحديد المسار الصحيح */
@@ -890,13 +897,7 @@ a {
   margin-top: -80px;
   border-radius: 15px;
 }
-.img222223 {
 
-  margin-top: 290px;
-  margin-left: -85px;
-  position: absolute;
-  width: 40px;
-}
 .button-animation1 span {
   position: absolute;
   display: block;
@@ -1130,13 +1131,7 @@ a {
 position: fixed;
   width: 100px;
 }
-.img222223 {
 
-  margin-top: 290px;
-  margin-left: -85px;
-  position: fixed;
-  width: 40px;
-}
 .img222000{
   position: fixed;
   width: 230px;
