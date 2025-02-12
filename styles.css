@@ -882,7 +882,7 @@ a {
 }
 
 .button-animation1 {
-  position: relative;
+ position: relative;
   display: inline-block;
   padding: 20px 30px;
   background: #131313;
@@ -894,7 +894,7 @@ a {
   width: 105px;
   height: 140px;
   margin-left: -230px;
-  margin-top: 550px;
+  margin-top: -200px;
   border-radius: 15px;
 }
 
