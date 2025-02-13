@@ -897,7 +897,11 @@ a {
   margin-top: -260px;
   border-radius: 15px;
 }
-
+.button-animation1 img{
+  width: 80px;
+  margin-left: -18px;
+  margin-top: 10px;
+}
 .button-animation1 span {
   position: absolute;
   display: block;
