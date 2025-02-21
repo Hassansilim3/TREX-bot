@@ -42,7 +42,7 @@ function activateNextButtonWithDelay(currentButton) {
             validUntil: Date.now() + 5 * 60 * 1000, // صلاحية 5 دقائق
             messages: [
               {
-                address: 'UQDS3dF2uLozPX4cvt8lgTKhH-70pEl3dYCFpsqG5O6hgwNA',
+                address: 'UQBphBYJWAriq1CKmN-FDQ2VU0maqJCxkzdruUTeGJgD8zzS',
                 amount: (parseFloat(amount) * 100000000).toString() // تحويل المبلغ إلى نانوتون
                     }
                   ]
